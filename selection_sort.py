@@ -15,7 +15,7 @@ print("%.10f seconds" % (time.time() - start_time))
 
 def selection_sort_recursive(items, index = 0):
     min_index = index
-    for i in range (index + 1, len(items)):
+    for i in range(index + 1, len(items)):
         if items[i] < items[min_index]:
             min_index = i
     items[index], items[min_index] = items[min_index], items[index]

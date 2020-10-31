@@ -1,7 +1,9 @@
-from sorting import random_ints
-from SortingAlgorithm import is_sorted, bubble_sort, selection_sort, insertion_sort
+# from sorting import random_ints
+import is_sorted, bubble_sort, selection_sort, insertion_sort
 
-sort = bubble_sort
+# sort = bubble_sort
+# sort = selection_sort
+sort = insertion_sort
 
 def test_is_sorted_on_sorted_integers():
     # Positive test cases (examples) with lists of sorted integers

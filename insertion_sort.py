@@ -18,11 +18,11 @@ def insertion_sort_recursive(items, n):
     if n <= 1:
         return
 
-    insertion_sort_recursive(items,n - 1)
+    insertion_sort_recursive(items, n - 1)
 
     second_value = items[n - 1]
     first_index = n-2
-    while (first_index >= 0 and items[first_index] > second_value):
+    while first_index >= 0 and items[first_index] > second_value:
         items[first_index + 1] = items[first_index]
         first_index = first_index - 1
     items[first_index + 1]=second_value
