@@ -24,7 +24,7 @@ def insertion_sort_recursive(items, n):
     first_index = n-2
     while first_index >= 0 and items[first_index] > second_value:
         items[first_index + 1] = items[first_index]
-        first_index = first_index - 1
+        first_index -= 1
     items[first_index + 1]=second_value
     return items
 
